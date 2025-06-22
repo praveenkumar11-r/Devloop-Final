@@ -1,0 +1,271 @@
+
+
+body, h1, h2, h3, p, div, input, button{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Onset', san-serif;
+}
+
+/* Base Styles */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Onest', 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.auth-container h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Form Inputs */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.auth-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+..auth-container input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Button */
+.auth-container button {
+  background: #D2042D;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.logout-button {
+  background: #D2042D;
+  color: white;
+  border: none;
+  display: block; /* Changed from flex to block */
+  margin: 0 auto; /* Centers horizontally */
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-container button:hover {
+  background: red;
+}
+
+/* Switch Link */
+.auth-switch {
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.auth-container a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+.dashboard-body{
+    background-color: #FAF9F6;
+    min-height: 100vh;
+}
+
+.dashboard-header{
+    background-color: #D2042D;
+    padding: 20px;
+    color: #faf9f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.app-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-icon{
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.profile-menu{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #d2042d;
+    color: #faf9f6;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    z-index: 100;
+}
+
+.profile-menu input{
+    background-color: #faf9f6;
+    color: black;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.hidden{
+    display: none;
+}
+
+.dashboard-main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+    justify-content:center;
+}
+
+.panel-card {
+    background-color: #faf9f6;
+    color:#d2042d;
+    padding: 30px;
+    width: 150px;
+    height: 120px;
+    border: 3px solid #d2042d;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.panel-card:hover {
+    transform: translateY(-5px);
+    background-color: #d2042d;
+    color: white;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d2042d;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    z-index: 200;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.modal button {
+    padding: 8px;
+    font-size: 15px;
+    background-color: #faf9f6;
+    color: white;
+    border: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.modal button:hover {
+    background-color: #ab0b00;
+}
+
+.top-bar{
+    background-color: #d2042d;
+    color:#faf9f6;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#editor-container{
+    height:400px;
+    background: #faf9f6;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.clg-btn{
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #d2042d;
+    background-color: #faf9f6;
+    color:#d2042d;
+    transition: all 0.3s ease;
+}
+
+hover: .clg-btn{
+    tranlateY(-3px);
+    background-color: #d2042d;
+    color: #faf9f6;
+}
+a{
+    text-decoration: none;
+}
+
+.date-bar{
+    background-color: #faf9f6;
+    color: black;
+    width: 90%;
+;
+    padding: 5px;
+    font-size: 14px;
+}
