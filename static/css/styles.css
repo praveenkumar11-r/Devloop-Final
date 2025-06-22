@@ -1,0 +1,183 @@
+body {
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">    background-color: #ccccff;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+    margin: 0;
+    padding: 0;
+}
+
+.home-body, .auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FAF9F6 ;
+}
+
+.home-container, .auth-container {
+    background-color: #FAF9F6;
+    padding: 50px 100px 50px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #d2042d;
+    text-align: center;
+}
+
+.btn, button {
+    background-color: #d2042d ;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover, button:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+
+.main-body {
+    background-color: #ccccff;
+    padding: 20px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5c5c99;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+.profile-icon {
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-container {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #a3a3cc;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+    display: none;
+}
+
+.task-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #a3a3cc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.task-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: auto;
+    flex-wrap: nowrap; /* Make sure it doesn't wrap */
+    overflow: hidden;
+}
+
+.task-text {
+    white-space: nowrap;      /* Prevents line break */
+    max-width: 100%;          /* Takes available width */
+}
+
+
+.task-card:hover {
+    transform: scale(1.02);
+    background-color: #9999cc;
+}
+
+.task-card.habit {
+    border-bottom: 8px solid black;
+}
+
+.task-actions {
+    display: none;
+}
+
+.task-card:hover .task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #5c5c99;
+    color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    z-index: 99;
+    display: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.task-text.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.modal {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.modal:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
+    display: block;
+}
+
+form{
+    height: 300px;
+    width: 400px;
+}
+
